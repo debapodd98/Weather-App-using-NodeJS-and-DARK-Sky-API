@@ -1,7 +1,7 @@
 const request = require('request')
 
 const forecast = (latitude, longitude, callback) => {
-    const url = 'https://api.darksky.net/forecast/45cf2cd51db7bcef32fcbb3de6b08bc7/' + latitude + ',' + longitude
+    const url = 'https://api.darksky.net/forecast/<YOUR CODE>/' + latitude + ',' + longitude
     request({ url, json: true }, (error, { body }) => {
         if (error) {
             callback('Unable to connect to Location Services!', undefined)
